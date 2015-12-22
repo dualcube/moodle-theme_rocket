@@ -59,6 +59,7 @@ a.logo {
     background-image: url([[setting:logo]]);
     background-repeat: no-repeat;
     background-position: left top;
+    background-size: contain;
 }
 #hometopblocks {
     height: [[setting:bannerheight]];
@@ -76,6 +77,7 @@ a.logo {
     background-color: #ccc;
     height: [[setting:bannerheight]];
     width: 750px;
+    background-size: contain;
 }
 #headerstrip {
     background-color: [[setting:themecolor]];
