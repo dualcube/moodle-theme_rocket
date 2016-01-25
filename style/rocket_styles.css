@@ -427,7 +427,9 @@ textarea {
 /* @end */
 
 /* @group Coursebox Info & Summary */
-
+.hidden.sectionname {
+    display: none !important;
+}
 .sectionname {
     border-bottom: 1px dashed #eee;
     padding-bottom: 3px;
