@@ -43,6 +43,12 @@ if ($hascustommenu) {
     $bodyclasses[] = 'has_custom_menu';
 }
 echo $OUTPUT->doctype() ?>
+<?php
+$version = $CFG->version;
+if($version > 2016052305){?>
+<link rel="stylesheet" type="text/css" href="<?php echo $CFG->wwwroot; ?>/theme/rocket/style/acustom.css" />
+<?php
+} ?>
 <html <?php echo $OUTPUT->htmlattributes() ?>>
     <head>
         <title><?php echo $PAGE->title ?></title>

@@ -23,6 +23,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 // Get settings.
+require_login();
 $hasheading = ($PAGE->heading);
 $hasnavbar = (empty($PAGE->layout_options['nonavbar']) && $PAGE->has_navbar());
 $hasfooter = (empty($PAGE->layout_options['nofooter']));
@@ -56,8 +57,13 @@ echo $OUTPUT->doctype() ?>
     <head>
         <title><?php echo $PAGE->title ?></title>
         <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
+        <?php $version = $CFG->version;
+        if($version > 2016052305){?>
+            <link rel="stylesheet" type="text/css" href="<?php echo $CFG->wwwroot; ?>/theme/rocket/style/acustom.css" />
+
         <!-- START AUTOHIDE STATUS CHECK -->
-        <?php if (!empty($PAGE->theme->settings->autohide)) {
+        <?php }
+        if (!empty($PAGE->theme->settings->autohide)) {
             $autohide = $PAGE->theme->settings->autohide;
         } else {
             $autohide = 'disable';
@@ -89,22 +95,29 @@ echo $OUTPUT->doctype() ?>
                     <?php if ($hasheading || $hasnavbar) { ?>
                         <div id="page-header">
                             <?php if ($hasheading) { ?>
-                                <table style="width:100%; height:133px; margin: 0px;">
-                                    <tr>
-                                        <td width="250px" style="margin:0px; padding:0px;">
-                                            <a class="logo" href="<?php echo $CFG->wwwroot; ?>" title="<?php print_string('home'); ?>"></a>
-                                        </td>
-                                        <td valign="bottom" style="margin:0px; padding:0px;">
+                                <table style="width:100%; height:133px; margin: 0px;"><tr>
+                                        <td id="td1" style="margin:0px; padding:0px;">
+                                    <a class="logo" href="<?php echo $CFG->wwwroot; ?>" title="<?php print_string('home'); ?>"></a>
+                                    </td><td id="td2" valign="bottom" style="margin:0px; padding:0px;">
                                         <div class="headermenu">
+                                        <?php $version = $CFG->version;
+                                        if($version > 2016052305){?>
+                                            <div class="duc_usermenu">
+                                            <?php echo $OUTPUT->user_menu(); ?>
+                                        </div>
+                                        <div class="duc_nav_plugin_output">
+                                            <?php echo $OUTPUT->navbar_plugin_output(); ?>
+                                        </div>
                                             <?php
-                                                if ($haslogininfo) {
-                                                    echo $OUTPUT->login_info();
-                                                }
-                                                if (!empty($PAGE->layout_options['langmenu'])) {
-                                                    echo $OUTPUT->lang_menu();
-                                                }
-                                                echo $PAGE->headingmenu;
-                                            ?>
+                                        }else {
+                                            if ($haslogininfo) {
+                                                echo $OUTPUT->login_info();
+                                            }
+                                            if (!empty($PAGE->layout_options['langmenu'])) {
+                                                echo $OUTPUT->lang_menu();
+                                            }
+                                            echo $PAGE->headingmenu;
+                                        }?>
                                         </div>
                             <?php
                                 }
@@ -138,7 +151,7 @@ echo $OUTPUT->doctype() ?>
                                     ?>
                                 </div>
                             </div>
-                            <div class="block-region" id="homeblock">
+                            <div id="homeblock">
                                 <div class="region-content">
                                     <?php if ($hashomeblock) { ?>
                                         <?php echo $OUTPUT->blocks_for_region('homeblock') ?>
@@ -148,7 +161,7 @@ echo $OUTPUT->doctype() ?>
                                 </div>
                             </div>
                         </div>
-                        <div id="headerstrip">
+                        <div id="headerstrip" class="duc_frontpage_headerstrip">
                             <div class="block-region" id="search">
                                 <div class="region-content">
                                     <?php if ($hassearch) { ?>
@@ -162,6 +175,15 @@ echo $OUTPUT->doctype() ?>
                         </div>
                         <div id="region-main-box">
                             <div id="region-post-box">
+                            <?php if ($hassidepre) { ?>
+                                <div id="region-pre" class="block-region">
+                                    <div class="region-content">
+                                        <?php echo $OUTPUT->blocks_for_region('side-pre') ?>
+                                    </div>
+                                </div>
+                            <?php
+                                }
+                            ?>
                                 <div id="region-main-wrap">
                                     <div id="region-main-pad">
                                         <div id="region-main">
@@ -171,15 +193,6 @@ echo $OUTPUT->doctype() ?>
                                         </div>
                                     </div>
                                 </div>
-                                <?php if ($hassidepre) { ?>
-                                    <div id="region-pre" class="block-region">
-                                        <div class="region-content">
-                                            <?php echo $OUTPUT->blocks_for_region('side-pre') ?>
-                                        </div>
-                                    </div>
-                                <?php
-                                    }
-                                ?>
                                 <?php if ($hassidepost) { ?>
                                     <div id="region-post" class="block-region">
                                         <div class="region-content">

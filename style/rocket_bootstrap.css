@@ -860,7 +860,7 @@ width: auto;
 }
 
 #page-admin-registration-register .registration_textfield {
-  width: 210px !important;
+  width: auto !important;
 }
 input#id_fullname,
 input#id_name,

@@ -21,6 +21,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 // Get settings.
+require_login();
 $toset = optional_param('rocket_settings', false, PARAM_BOOL);
 $hasheading = ($PAGE->heading);
 $hasnavbar = (empty($PAGE->layout_options['nonavbar']) && $PAGE->has_navbar());
@@ -50,12 +51,24 @@ if ($hascustommenu) {
     $bodyclasses[] = 'has_custom_menu';
 }
 echo $OUTPUT->doctype() ?>
+<style type="text/css">
+    span .sectionname {
+    display: none !important;
+}
+</style>
+<?php
+//$result = substr($CFG->release, 0, 3);
+$version = $CFG->version;
+if($version > 2016052305){?>
+<link rel="stylesheet" type="text/css" href="<?php echo $CFG->wwwroot; ?>/theme/rocket/style/acustom.css" />
+<?php
+} ?>
 <html <?php echo $OUTPUT->htmlattributes() ?>>
     <head>
         <title><?php echo $PAGE->title ?></title>
         <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
         <!-- START AUTOHIDE STATUS CHECK -->
-        <?php 
+        <?php
             if (!empty($PAGE->theme->settings->autohide)) {
                 $autohide = $PAGE->theme->settings->autohide;
             } else {
@@ -88,11 +101,20 @@ echo $OUTPUT->doctype() ?>
                     <?php if ($hasheading || $hasnavbar) { ?>
                         <div id="page-header">
                             <?php if ($hasheading) { ?>
-                                <table style="width:100%; height:133px; margin: 0px;"><tr><td width="250px" style="margin:0px; padding:0px;">
+                                <table style="width:100%; height:133px; margin: 0px;"><tr><td id="td1" style="margin:0px; padding:0px;">
                                     <a class="logo" href="<?php echo $CFG->wwwroot; ?>" title="<?php print_string('home'); ?>"></a>
-                                    </td><td valign="bottom" style="margin:0px; padding:0px;">
+                                    </td><td id="td2" valign="bottom" style="margin:0px; padding:0px;">
                                     <div class="headermenu">
-                                        <?php
+                                        <?php $version = $CFG->version;
+                                        if($version > 2016052305){?>
+                                        <div class="duc_usermenu">
+                                        	<?php echo $OUTPUT->user_menu(); ?>
+                                        </div>
+                                        <div class="duc_nav_plugin_output">
+                                        	<?php echo $OUTPUT->navbar_plugin_output(); ?>
+                                        </div>
+                                            <?php
+                                        }else{
                                             if ($haslogininfo) {
                                                 echo $OUTPUT->login_info();
                                             }
@@ -100,7 +122,8 @@ echo $OUTPUT->doctype() ?>
                                                 echo $OUTPUT->lang_menu();
                                             }
                                             echo $PAGE->headingmenu;
-                                        ?>
+                                        }
+                                            ?>
                                     </div>
                             <?php
                                 }
@@ -113,8 +136,8 @@ echo $OUTPUT->doctype() ?>
                                     }
                                 ?>
                             <!-- END OF CUSTOMMENU -->
-                                </td></tr></table>
-                            </div>
+                               </div> </td></tr></table>
+                            
                         </div>
                     <?php
                         }
@@ -123,7 +146,7 @@ echo $OUTPUT->doctype() ?>
         <div id="editingmode"><?php echo $editingmode ?></div>
         <div id="page-content">
         <!-- START NAVBAR -->
-        <div id="headerstrip">
+        <div id="headerstrip" class="duc_forced_headerstrip_class">
             <?php if ($hassearch) { ?>
                 <div id="search">
                     <div class="region-content">
@@ -135,34 +158,28 @@ echo $OUTPUT->doctype() ?>
             ?>
             <div class="jcontrolsleft">		
                 <?php if ($hasnavbar) { ?>
-                    <div class="nav_title"><?php echo $navigation ?></div>
+                    <div class="nav_title duc_nav_title"><?php echo $navigation ?></div>
                     <div class="navbar clearfix">
-                        <div class="breadcrumb"> <?php echo $OUTPUT->navbar();  ?></div>
+                        <div class="breadcrumb duc_navbar"> <?php echo $OUTPUT->navbar();  ?></div>
                     </div>
+                    
+                </div>
                 <?php
                     }
                 ?>
+                <div id="ebutton">
+                    <?php 
+                        if ($hasnavbar) { 
+                            echo $PAGE->button; 
+                        } 
+                    ?>
+                </div>
             </div>
-            <div id="ebutton">
-                <?php 
-                    if ($hasnavbar) { 
-                        echo $PAGE->button; 
-                    } 
-                ?>
-            </div>
+            
         </div>
         <!-- END NAVBAR -->
         <div id="region-main-box">
             <div id="region-post-box">
-                <div id="region-main-wrap">
-                    <div id="region-main-pad">
-                        <div id="region-main">
-                            <div class="region-content">
-                                <?php echo $OUTPUT->main_content() ?>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
                 <?php if ($hassidepre) { ?>
                     <div id="region-pre" class="block-region">
                         <div class="region-content">
@@ -172,6 +189,15 @@ echo $OUTPUT->doctype() ?>
                 <?php
                     }
                 ?>
+                <div id="region-main-wrap">
+                    <div id="region-main-pad">
+                        <div id="region-main">
+                            <div class="region-content">
+                                <?php echo $OUTPUT->main_content() ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <?php if ($hassidepost) { ?>
                     <div id="region-post" class="block-region">
                         <div class="region-content">
@@ -183,7 +209,7 @@ echo $OUTPUT->doctype() ?>
                 ?>
             </div>
         </div>
-        </div>
+        
         <!-- START OF FOOTER -->
         <?php if ($hasfooter) { ?>
             <div id="page-footer" class="clearfix"> 
@@ -206,9 +232,8 @@ echo $OUTPUT->doctype() ?>
         <?php
             }
         ?>
-        <div class="clearfix"></div>
-        </div>
-        </div>
+        
+        
         <?php echo $OUTPUT->standard_end_of_body_html() ?>
     </body>
 </html>
