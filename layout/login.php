@@ -44,8 +44,7 @@ if ($hascustommenu) {
 }
 echo $OUTPUT->doctype() ?>
 <?php
-$version = $CFG->version;
-if($version > 2016052305){?>
+if($CFG->version >= 2016120500){?>
 <link rel="stylesheet" type="text/css" href="<?php echo $CFG->wwwroot; ?>/theme/rocket/style/acustom.css" />
 <?php
 } ?>

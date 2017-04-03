@@ -22,8 +22,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 $THEME->name = 'rocket';
-$version = $CFG->version;
-if($version > 2016052305){
+if($CFG->version >= 2016120500){
     $THEME->parents = array('base','bootstrapbase');
 }else {
     $THEME->parents = array('base');
