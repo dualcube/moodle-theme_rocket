@@ -48,7 +48,7 @@ $THEME->editor_sheets = array('editor');
 $THEME->layouts = array(
     // Most backwards compatible layout without the blocks - this is the layout used by default.
     'base' => array(
-        'file' => 'default.php',
+        'file' => 'default1.php',
         'regions' => array(),
     ),
     // Standard layout with blocks, this is recommended for most pages with default information.
