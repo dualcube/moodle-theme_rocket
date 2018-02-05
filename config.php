@@ -51,20 +51,20 @@ $THEME->layouts = array(
         'file' => 'default1.php',
         'regions' => array(),
     ),
-    // Standard layout with blocks, this is recommended for most pages with default information.
-    'standard' => array(
-        'file' => 'default.php',
-        'regions' => array('side-pre', 'side-post', 'search'),
-        'defaultregion' => 'side-pre',
-    ),
     // Main course page.
     'course' => array(
-        'file' => 'default.php',
+        'file' => 'default1.php',
         'regions' => array('side-pre', 'side-post', 'search'),
         'defaultregion' => 'side-pre',
         'options' => array('langmenu' => true),
     ),
     'coursecategory' => array(
+        'file' => 'default1.php',
+        'regions' => array('side-pre', 'side-post', 'search'),
+        'defaultregion' => 'side-pre',
+    ),
+    // Standard layout with blocks, this is recommended for most pages with default information.
+    'standard' => array(
         'file' => 'default.php',
         'regions' => array('side-pre', 'side-post', 'search'),
         'defaultregion' => 'side-pre',
