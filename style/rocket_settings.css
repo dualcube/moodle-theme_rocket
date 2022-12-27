@@ -330,3 +330,35 @@ ul.dropdown li.clickable-with-children:hover > a {
 /* @group Custom CSS Settings */
 [[setting:customcss]]
 /* @end */
+.generaltable th, .generaltable td, .generaltable thead th, .mform fieldset {
+    border: 0;
+  }
+  #custommenu ul.dropdown>li span a {
+    height: 35px;
+}
+ul.dropdown li a, ul.dropdown span.customitem a {
+    padding: 10px 20px;
+    line-height: 1;
+}
+.headermenu {
+    background: #d2d4d7;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.block_tree .tree_item.branch:hover, p.tree_item.hasicon.tree_item.leaf:hover{
+    background: #eed3d8;
+}
+.block_tree .tree_item.branch{
+    padding: 5px;
+}
+.simplesearchform .btn-submit {
+    background-color: #f8f9fa;
+    margin: 0;
+}
+.simplesearchform .input-group input.form-control {
+    margin: 0;
+}
+p.tree_item.hasicon.tree_item.leaf i {
+    opacity: 0;
+}

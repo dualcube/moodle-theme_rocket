@@ -90,7 +90,7 @@ body {
 }
 #page-content #region-main-box .region-content {
     margin: 0;
-    padding:0;
+    padding:1rem;
 }
 #page-site-index .headingblock {
     margin-bottom:9px;

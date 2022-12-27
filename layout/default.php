@@ -65,7 +65,7 @@ if($CFG->version >= 2016120500){?>
 <html <?php echo $OUTPUT->htmlattributes() ?>>
     <head>
         <title><?php echo $PAGE->title ?></title>
-        <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
+        <link rel="shortcut icon" href="<?php echo $OUTPUT->image_url('favicon', 'theme')?>" />
         <!-- START AUTOHIDE STATUS CHECK -->
         <?php
         if (!empty($PAGE->theme->settings->autohide)) {

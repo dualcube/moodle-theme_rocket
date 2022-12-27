@@ -31,7 +31,6 @@
 }
 
 .popover-region-notifications {
-    margin-right: 30px !important;
 }
 
 .popover-region-messages {
@@ -154,9 +153,12 @@
 }
 
 .side-pre-only #region-main-wrap {
-    width: 70% !important;
+    width: 69% !important;
     right: 0% !important;
     float: left !important;
+    margin-top: 2rem !important;
+    border-radius:0.5rem ;
+    overflow: hidden;
 }
 
 .editing.pagelayout-mydashboard #region-main-wrap {
@@ -256,7 +258,8 @@ ul.indented-list {
 
 #toplinks .region-content {
     margin: 0;
-    padding: 10px !important;
+    /* padding: 10px !important; */
+    color: #fff;
 }
 
 #hometopblocks {
@@ -304,8 +307,8 @@ ul.indented-list {
 .duc_nav_plugin_output {
     float: right !important;
     padding-top: 0% !important;
-    display: inline-block !important;
-    padding-top: 15px !important
+    display: flex !important;
+    /* padding-top: 15px !important */
 }
 
 .headermenu {
@@ -382,7 +385,7 @@ input[type=checkbox], input[type=radio] {
 .mform .fitem .felement {
     border-width: 0;
     width: 70% !important;
-    margin-left: 30% !important;
+    /* margin-left: 30% !important; */
 }
 
 div.jcontrolsleft {

@@ -1,7 +1,7 @@
 /* @group Generic Blocks */
 
 #region-pre .block, #region-post .block {
-    margin : 20px;
+    /* margin : 20px; */
     margin-top: 15px;
     margin-bottom: 0px;
     padding : 0px;
@@ -107,7 +107,9 @@
     color:#50646d;
 }
 #region-pre .block .content {
-    border: 0px none;
+    background: #f6e9eb;
+    border: 0 !important;
+    border-radius: 0.25rem;
 }
 #region-post .block .header {
     border-bottom:1px solid #ddd;
