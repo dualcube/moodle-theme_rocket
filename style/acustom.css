@@ -79,7 +79,7 @@
 }
 
 .loginform {
-    margin-left: -50px !important;
+    margin: 1rem;
 }
 
 .block-hider-hide, .block-hider-show, .customcommand {
@@ -419,3 +419,8 @@ background-size: 100% 100% !important;
 background-position: 0 0 !important;
 }
 
+
+button.btn.btn-secondary {
+    float: right;
+    clear: both;
+}
