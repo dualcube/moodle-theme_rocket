@@ -24,9 +24,12 @@ h2.headingblock {
 }
 #page-site-index {
     background-color: [[setting:themecolor]];
-    background-image: url([[pix:theme|core/body_bg]]);
     background-repeat: repeat-x;
     background-position: left [[setting:bannerheight]];
+    border: 0;
+}
+div#page-header td {
+    border: 0;
 }
 h2.headingblock {
     border-width: 0 0 1px;
@@ -56,10 +59,11 @@ h2.headingblock,
     border-color: [[setting:menutrimcolor]];
 }
 a.logo {
-    background-image: url([[setting:logo]]);
+    background-image: url([[pix:theme|logo/logo]]);
     background-repeat: no-repeat;
     background-position: left top;
     background-size: contain;
+    height: 100%;
 }
 #hometopblocks {
     height: [[setting:bannerheight]];
@@ -133,6 +137,14 @@ div.jcontrolsleft {
     border-width: 3px 0 0;
     border-style: solid;
     border-color: [[setting:themecolor]];
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.footer-right .copyright {
+    margin-top: 0; 
+    margin-bottom: 0;
 }
 #page-footer .footer-left #logo {
     background-image: url([[pix:theme|footer/moodle-logo]]);
