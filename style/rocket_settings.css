@@ -11,7 +11,7 @@ body {
     background-repeat: repeat-x;
     background-position: left top;
     background-color: [[setting:themecolor]];
-    border-top: 5px solid [[setting:themetrimcolor]];
+    border-top: 0.313rem solid [[setting:themetrimcolor]];
 }
 a:link,
 a:visited {
@@ -32,20 +32,20 @@ div#page-header td {
     border: 0;
 }
 h2.headingblock {
-    border-width: 0 0 1px;
+    border-width: 0 0 0.06rem;
 }
 table#home_title h1 {
     color: [[setting:themetrimcolor]];
 }
 .block_calendar_month .calendartable .today {
-    border-width: 1px;
+    border-width: 0.06rem;
     border-style: dotted;
 }
 .block_rss_client .list li {
-    border-width: 1px 0 0;
+    border-width: 0.06rem 0 0;
 }
 #page-header {
-    border-width: 0 0 3px;
+    border-width: 0 0 0.188rem;
 }
 h2.headingblock,
 .block_rss_client .list li,
@@ -80,7 +80,7 @@ a.logo {
     background-repeat: no-repeat;
     background-color: #ccc;
     height: [[setting:bannerheight]];
-    width: 750px;
+    width: 46.875rem;
     background-size: contain;
 }
 #headerstrip {
@@ -101,7 +101,7 @@ a.logo {
 }
 #dndupload-status,
 #editingmode {
-    border-width: 0 0 3px;
+    border-width: 0 0 0.188rem;
     border-style: solid;
     border-color: [[setting:menutrimcolor]];
 }
@@ -119,7 +119,7 @@ div.jcontrolsleft {
     background-position: left top;
 }
 .coursebox {
-    border-width: 0 0 1px;
+    border-width: 0 0 0.06rem;
     border-style: dashed;
     border-color: [[setting:themecolor]];
 }
@@ -131,10 +131,10 @@ div.jcontrolsleft {
 #adminsettings h2.main{
     background-image: url([[pix:theme|core/icons]]);
     background-repeat: no-repeat;
-    background-position: left -76px;
+    background-position: left -4.75rem;
 }
 #page-footer {
-    border-width: 3px 0 0;
+    border-width: 0.188rem 0 0;
     border-style: solid;
     border-color: [[setting:themecolor]];
     width: 100%;
@@ -183,7 +183,7 @@ table#links a {
     color: [[setting:themecolor]];
 }
 .loginbox {
-    border-width: 3px;
+    border-width: 0.188rem;
     border-style: solid;
     border-color: [[setting:themetrimcolor]];
 }
@@ -212,7 +212,7 @@ table#links a {
 }
 
 #toplinks .block .header {
-    border-bottom: 1px solid [[setting:menutrimcolor]] !important;
+    border-bottom: 0.06rem solid [[setting:menutrimcolor]] !important;
 }
 
 #toplinks .block_html .content,
@@ -223,13 +223,13 @@ table#links a {
     background: [[setting:menuhovercolor]];
 }
 #toplinks .block_html .content ul li {
-    border-bottom: [[setting:menutrimcolor]] 1px dashed;
+    border-bottom: [[setting:menutrimcolor]] 0.06rem dashed;
 }
 #search .block_myprofile div.content {
     color: [[setting:themecolor]];
 }
 #search .block_myprofile img.profilepicture {
-    border: 1px solid [[setting:themecolor]];
+    border: 0.06rem solid [[setting:themecolor]];
 }
 /* @end */
 
@@ -253,12 +253,12 @@ table#links a {
 /* @group Menu */
 
 ul.dropdown ul li {
-    border-width: 1px;
+    border-width: 0.06rem;
     border-style: solid;
     border-color: #666 #ccc [[setting:menucolor]];
 }
 ul.dropdown ul li:first-child {
-    border-width: 3px 0 0;
+    border-width: 0.188rem 0 0;
     border-style: solid;
     border-color: [[setting:menutrimcolor]];
 }
@@ -312,11 +312,11 @@ ul.dropdown li.clickable-with-children:hover > a {
 
 /* @group Modules */
 .forumpost .row.header {
-    border-width: 0 0 1px;
+    border-width: 0 0 0.06rem;
     border-style: dashed;
 }
 .path-mod-forum .forumheaderlist th.header {
-    border-width: 0 0 4px;
+    border-width: 0 0 0.25rem;
     border-style: solid;
 }
 .path-mod-forum .forumheaderlist th.header,
@@ -346,10 +346,10 @@ ul.dropdown li.clickable-with-children:hover > a {
     border: 0;
   }
   #custommenu ul.dropdown>li span a {
-    height: 35px;
+    height: 2.188rem;
 }
 ul.dropdown li a, ul.dropdown span.customitem a {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     line-height: 1;
 }
 .headermenu {
@@ -362,7 +362,7 @@ ul.dropdown li a, ul.dropdown span.customitem a {
     background: #eed3d8;
 }
 .block_tree .tree_item.branch{
-    padding: 5px;
+    padding: 0.313rem;
 }
 .simplesearchform .btn-submit {
     background-color: #f8f9fa;

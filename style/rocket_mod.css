@@ -2,9 +2,9 @@
 
 .forumpost {
     border-collapse:separate;
-    border: 1px dotted #ccc;
-    padding: 5px;
-    margin-top:10px;
+    border: 0.06rem dotted #ccc;
+    padding: 0.313rem;
+    margin-top:0.625rem;
     width: 100%;
     width: 98%;
 }
@@ -13,7 +13,7 @@
 }
 .forumpost .row.header {
     background: #fff;
-    border:0px;
+    border:0rem;
     min-height: 3em;
 }
 
@@ -24,14 +24,14 @@
 
 .forumpost .row.header .author {
 	font-size: .85em;
-	margin-top: 4px;
+	margin-top: 0.25rem;
 }
 
 .forumpost .picture img {
-    margin: 0px 4px 0 0;
+    margin: 0rem 0.25rem 0 0;
 }
 .forumpost .content .posting {
-    margin-top: 15px;
+    margin-top: 0.938rem;
     max-width:100%;
     overflow:auto;
 }
@@ -46,13 +46,13 @@
 }
 .path-mod-forum .forumheaderlist .discussion.r1 {
     background-color: #f4f4f4;
-    border-bottom: 1px solid #e6e6e6;
-    border-top: 1px solid #d9d9d9;
+    border-bottom: 0.06rem solid #e6e6e6;
+    border-top: 0.06rem solid #d9d9d9;
 }
 .path-mod-forum .forumheaderlist {
-    border: 1px solid #ccc;
+    border: 0.06rem solid #ccc;
     border-collapse: separate;
-    margin-top: 10px;
+    margin-top: 0.625rem;
     width: 100%;
 }
 .path-mod-forum .forumheaderlist th.header {
@@ -60,22 +60,22 @@
     text-transform: uppercase;
     font-weight: 200;
     text-align: left;
-    padding: 10px;
+    padding: 0.625rem;
 }
 .path-mod-forum .forumheaderlist td {
     border-color: #ccc;
     border-style: solid;
-    border-width: 1px 0 0;
+    border-width: 0.06rem 0 0;
 }
 
 .forumsearch {
-	border: 1px solid #000;
+	border: 0.06rem solid #000;
 	display: none;
 }
 
 /** Forum post colors **/
 .forumpost .topic {
-padding: 7px;
+padding: 0.438rem;
 }
 
 /** og color #04346c **/
@@ -85,10 +85,10 @@ color: #fff;
 
 .forumpost img.userpicture,
 .forumheaderlist img.userpicture {
-	border: 1px solid #ddd;
+	border: 0.06rem solid #ddd;
 	background: #fff;
-	padding: 3px;
-	padding-bottom: 10px;
+	padding: 0.188rem;
+	padding-bottom: 0.625rem;
 }
 
 .forumheaderlist {
@@ -111,12 +111,12 @@ color: #fff;
 
 #page-mod-quiz-edit div.question {
 	background: transparent;
-	border: 0px none;
+	border: 0rem none;
 }
 
 #page-mod-quiz-edit .reorder div.question div.content {
-	padding: 5px;
-	margin-bottom: 10px;
+	padding: 0.313rem;
+	margin-bottom: 0.625rem;
 }
 
 #page-mod-quiz-edit div.question div.content .singlequestion .questionpreview,
@@ -136,16 +136,16 @@ color: #fff;
     background-color: #def
 }
 .user-grade {
-    border: 1px solid #abc;
+    border: 0.06rem solid #abc;
 }
 .user-grade td.b1l, .user-grade td.b2l {
-    border-left: 2px solid #aaa;
+    border-left: 0.125rem solid #aaa;
 }
 .user-grade td.b1b, .user-grade td.b2b {
-    border-bottom: 2px solid #aaa;
+    border-bottom: 0.125rem solid #aaa;
 }
 .user-grade td.b1t, .user-grade td.b2t {
-    border-top: 2px solid #369;
+    border-top: 0.125rem solid #369;
 }
 tr.discussion td.replies { text-align: center;}
 
@@ -156,12 +156,12 @@ tr.discussion td.replies { text-align: center;}
 AJAX User Enroller Panel
 -----------------------*/
 .user-enroller-panel {
-    width:400px;
+    width:25rem;
     background-color:#666;
     position:absolute;
     top:10%;
     left:10%;
-    border:1px solid #666;
-    border-width:0 5px 5px 0;
+    border:0.06rem solid #666;
+    border-width:0 0.313rem 0.313rem 0;
     z-index: 99999!important;
 }
