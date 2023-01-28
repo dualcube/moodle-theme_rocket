@@ -25,7 +25,7 @@
 
 
 
-class theme_rocket_core_renderer extends core_renderer {
+class theme_rocket_core_renderer extends \core_renderer {
     /**
      * Renders a custom menu object (located in outputcomponents.php)
      *

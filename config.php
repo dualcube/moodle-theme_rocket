@@ -22,13 +22,9 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 $THEME->name = 'rocket';
-// if($CFG->version >= 2016120500){
-//     $THEME->parents = array('base','bootstrapbase');
-// }else {
-//     $THEME->parents = array('base');
-// }
-$THEME->parents = ['boost'];
+$THEME->parents = ['classic'];
 $THEME->haseditswitch = false;
+$THEME->enable_dock = false;
 $THEME->sheets = array(
     'rocket_layout',   /* Must come first: Page layout */
     'rocket_styles',   /* Must come second: default styles */

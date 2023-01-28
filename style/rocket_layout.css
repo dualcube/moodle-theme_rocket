@@ -12,14 +12,14 @@ body {
 }
 
 #page-wrapper {
-    min-width: 910px;
+    min-width: 56.875rem;
     margin: 0 auto;
     background: transparent;
-    border: 0px none;
+    border: 0rem none;
 }
 
 #page-site-index #page-wrapper{
-    width: 1000px;
+    width: 62.5rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -47,7 +47,7 @@ body {
     float:left;
     width:200%;
     position:relative;
-    left:250px;
+    left:15.625rem;
     background: #fff;        /* Centre column background colour */
     }
 #region-post-box {
@@ -55,7 +55,7 @@ body {
     width:100%;
     position:relative;
     left:50%;
-    margin-left: -500px;
+    margin-left: -31.25rem;
     background: #fff;        /* Right column background colour */
 }
 #region-main-wrap {
@@ -65,7 +65,7 @@ body {
     right:100%;
 }
 #region-main-pad {
-    margin:15px 0px 0 520px;
+    margin:0.938rem 0rem 0 32.5rem;
     overflow:hidden;
 }
 #region-main {
@@ -74,37 +74,37 @@ body {
 }
 #region-pre {
     float:left;
-    width:250px;
+    width:15.625rem;
     position:relative;
     margin-left:-50%;
-    left:250px;
+    left:15.625rem;
     overflow:hidden;
     background: transparent;
 }
 #region-post {
     float:left;
-    width:250px;
+    width:15.625rem;
     position:relative;
-    left:0px;
+    left:0rem;
     overflow:hidden;
 }
 #page-content #region-main-box .region-content {
     margin: 0;
-    padding:0;
+    padding:1rem;
 }
 #page-site-index .headingblock {
-    margin-bottom:9px;
-    margin-left: 3px;
+    margin-bottom:0.563rem;
+    margin-left: 0.188rem;
 }
 #page-footer {
     clear:both;
     float:left;
     width: 100%;
-    height: 70px;
+    height: 4.375rem;
     margin: 0;
     padding: 0;
     background-color: #fff;
-    border-top: 1px dotted #ccc;
+    border-top: 0.06rem dotted #ccc;
 }
 
 
@@ -115,13 +115,13 @@ body {
 
 #region-pre .block-region {
     float: left;
-    width: 250px;
+    width: 15.625rem;
     margin: 0;
     padding: 0;
 }
 #region-post .block-region {
     float: right;
-    width: 250px;
+    width: 15.625rem;
     margin: 0;
     padding: 0;
 }
@@ -134,13 +134,13 @@ body {
 
 /* @group Side Pre Only */
 
-.side-pre-only #region-main-box {width: 200%; left: 250px;}
-.side-pre-only #region-post-box {width: 100%; left: 50%; margin-left: -250px; background-color: #fff;}
+.side-pre-only #region-main-box {width: 200%; left: 15.625rem;}
+.side-pre-only #region-post-box {width: 100%; left: 50%; margin-left: -15.625rem; background-color: #fff;}
 .side-pre-only #region-main-wrap {width: 50%; right: 100%;}
-.side-pre-only #region-main-pad {margin: 0px 10px 0px 260px;}
+.side-pre-only #region-main-pad {margin: 0rem 0.625rem 0rem 16.25rem;}
 .side-pre-only #region-main {width: 100%;}
-.side-pre-only #region-pre {width: 250px; left: 0px; margin-left:-50%;}
-.side-pre-only #region-post {width: 0px; left: 0px;}
+.side-pre-only #region-pre {width: 15.625rem; left: 0rem; margin-left:-50%;}
+.side-pre-only #region-post {width: 0rem; left: 0rem;}
 
 
 
@@ -149,13 +149,13 @@ body {
 /* @group Side Post Only */
 
 .side-post-only #page-content { background-color: #fff;}
-.side-post-only #region-main-box {width: 200%; left: 250px;}
-.side-post-only #region-post-box {width: 100%; left: 50%; margin-left: -500px;}
+.side-post-only #region-main-box {width: 200%; left: 15.625rem;}
+.side-post-only #region-post-box {width: 100%; left: 50%; margin-left: -31.25rem;}
 .side-post-only #region-main-wrap {width: 50%; right: 100%;}
-.side-post-only #region-main-pad {margin: 0px 0px 0px 260px;}
+.side-post-only #region-main-pad {margin: 0rem 0rem 0rem 16.25rem;}
 .side-post-only #region-main {width: 100%;}
-.side-post-only #region-pre {width: 0px;left: 0px;}
-.side-post-only #region-post {width: 250px; left: 0px;}
+.side-post-only #region-pre {width: 0rem;left: 0rem;}
+.side-post-only #region-post {width: 15.625rem; left: 0rem;}
 
 
 
@@ -163,11 +163,11 @@ body {
 
 /* @group Side Post Only When Moving */
 
-.blocks-moving.side-post-only #region-main-box {left: 250px;}
-.blocks-moving.side-post-only #region-post-box {margin-left: -500px;}
-.blocks-moving.side-post-only #region-main-pad {margin: 0 10px 0 510px;}
-.blocks-moving.side-post-only #region-pre {width: 250px;left: 250px;}
-.blocks-moving.side-post-only #region-post {width: 250px;left: 0px;}
+.blocks-moving.side-post-only #region-main-box {left: 15.625rem;}
+.blocks-moving.side-post-only #region-post-box {margin-left: -31.25rem;}
+.blocks-moving.side-post-only #region-main-pad {margin: 0 0.625rem 0 31.875rem;}
+.blocks-moving.side-post-only #region-pre {width: 15.625rem;left: 15.625rem;}
+.blocks-moving.side-post-only #region-post {width: 15.625rem;left: 0rem;}
 
 
 
@@ -176,10 +176,10 @@ body {
 /* @group Middle Column Only */
 
 .content-only #page-content { background-color: #fff;}
-.content-only #region-main-box {width: 200%; left: 0px;}
-.content-only #region-post-box {width: 100%; left: 50%; margin-left: 0px; background-color: #fff;}
+.content-only #region-main-box {width: 200%; left: 0rem;}
+.content-only #region-post-box {width: 100%; left: 50%; margin-left: 0rem; background-color: #fff;}
 .content-only #region-main-wrap {width: 50%; right: 100%;}
-.content-only #region-main-pad {margin: 0px 10px 0px 10px;}
+.content-only #region-main-pad {margin: 0rem 0.625rem 0rem 0.625rem;}
 .content-only #region-main {width: 100%}
 .content-only #region-pre { width:0;left:0;}
 .content-only #region-post { width: 0;left:0;}

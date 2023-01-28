@@ -11,7 +11,7 @@ Modules: Calendar
     width:14%;
     vertical-align:top;
     text-align: center;
-    border-width:0px;
+    border-width:0rem;
 }
 .path-calendar .calendar-controls .previous,
 .path-calendar .calendar-controls .next,
@@ -35,19 +35,19 @@ Modules: Calendar
     vertical-align: top;padding:0;
 }
 .path-calendar .maincalendar .bottom {
-    text-align: center;padding:5px 0 0 0;
+    text-align: center;padding:0.313rem 0 0 0;
 }
 .path-calendar .maincalendar .heightcontainer {
     height: 100%;position: relative;
 }
 .path-calendar .maincalendar .calendarmonth {
-    width:98%;margin:10px auto;
+    width:98%;margin:0.625rem auto;
 }
 .path-calendar .maincalendar .calendarmonth ul {
     margin:0;
 }
 .path-calendar .maincalendar .calendarmonth ul li {
-    list-style-type:none;margin-top: 4px;
+    list-style-type:none;margin-top: 0.25rem;
 }
 .path-calendar .maincalendar .calendarmonth td {
     height: 5em;
@@ -60,14 +60,15 @@ Modules: Calendar
     width: 39.95%;
 }
 .path-calendar .maincalendar .controls {
-    width:98%;margin:10px auto;
+    width:98%;
+    margin:0.625rem auto;
 }
 .path-calendar .maincalendar .eventlist .event {
     width:100%;
-    margin-bottom:10px;
-    border-spacing:0px;
+    margin-bottom:0.625rem;
+    border-spacing:0rem;
     border-collapse:separate;
-    border-width:1px;
+    border-width:0.06rem;
     border-style:solid;
 }
 .path-calendar .maincalendar .eventlist .event .topic .name {
@@ -81,7 +82,7 @@ Modules: Calendar
     clear:left;
 }
 .path-calendar .maincalendar .eventlist .event .side {
-    width:32px;
+    width:2rem;
 }
 .path-calendar .maincalendar .header {
     overflow:hidden;
@@ -91,18 +92,20 @@ Modules: Calendar
 }
 .path-calendar .filters table {
     border-collapse:separate;
-    border-spacing: 2px;width: 100%;
+    border-spacing: 0.125rem;
+    width: 100%;
 }
 #page-calendar-export .indent {
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 .block .minicalendar {
     width:100%;
-    margin:10px auto;
+    margin:0.625rem auto;
 }
 .block .minicalendar th,
 .block .minicalendar td {
-    padding:2px;font-size: 10px;
+    padding:0.125rem;
+    font-size: 0.625rem;
 }
 .block .minicalendar td.weekend {
     color:#A00;
@@ -127,8 +130,9 @@ Modules: Calendar
 }
 .block .filters table {
     border-collapse:separate;
-    border-spacing: 2px;
-    padding: 2px;width: 100%;
+    border-spacing: 0.125rem;
+    padding: 0.125rem;
+    width: 100%;
 }
 .block .content h3.eventskey {
     margin-top:0.5em;

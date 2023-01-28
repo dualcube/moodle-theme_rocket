@@ -158,6 +158,7 @@ echo $OUTPUT->doctype() ?>
                             </div>
                         </div>
                     </div>
+                    
                     <div id="headerstrip" class="duc_frontpage_headerstrip">
                         <div class="block-region" id="search">
                             <div class="region-content">
