@@ -1,7 +1,14 @@
 /* @group Layout */
 
 #page-wrapper {
-    width:[[setting:screenwidth]];
+    width:90%;
+}
+.navbar.fixed-top{
+ background: #a8213a;
+ align-items: center;
+}
+.columnleft.blockcolumn.has-blocks {
+    max-width: 30% !important;
 }
 
 /* @end */
@@ -10,7 +17,7 @@ body {
     background-image: url([[pix:theme|core/body_bg_sml]]);
     background-repeat: repeat-x;
     background-position: left top;
-    background-color: [[setting:themecolor]];
+    background-color: [[setting:themecolor]] !important;
     border-top: 0.313rem solid [[setting:themetrimcolor]];
 }
 a:link,
@@ -45,7 +52,8 @@ table#home_title h1 {
     border-width: 0.06rem 0 0;
 }
 #page-header {
-    border-width: 0 0 0.188rem;
+    border-width: 0 0 0.125rem;
+    margin: 0;
 }
 h2.headingblock,
 .block_rss_client .list li,

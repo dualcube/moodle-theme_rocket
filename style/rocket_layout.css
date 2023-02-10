@@ -19,7 +19,7 @@ body {
 }
 
 #page-site-index #page-wrapper{
-    width: 62.5rem;
+    /* width: 62.5rem; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -34,6 +34,10 @@ body {
 /* @end */
 
 /* @group 3 Column Page Layout */
+#page-content.blocks-pre .region-main {
+    width: 69%;
+    background: transparent;
+}
 
 #page-content {
     position:relative;    /* fixes IE7 overflow hidden bug stoping layout jumping out of place */
@@ -41,13 +45,14 @@ body {
     float:left;
     width:100%;            /* width of whole page */
     overflow:hidden;        /* This chops off any overhanging divs */
-    background: #f1f2f2;        /* Left column background colour */
+    background: #d0d5d5;        /* Left column background colour */
+    margin: 0;
 }
 #region-main-box {
-    float:left;
-    width:200%;
+    float:right;
+    /* width:200%; */
     position:relative;
-    left:15.625rem;
+    /* left:15.625rem; */
     background: #fff;        /* Centre column background colour */
     }
 #region-post-box {

@@ -69,6 +69,7 @@
 #ebutton .singlebutton {
     margin-bottom: 0rem !important;
     height: 1.75rem !important;
+    margin-top: 1rem;
 }
 
 .loginpanel{
@@ -87,7 +88,6 @@
 #page-wrapper {
     width: 80% !important;
 }
-
 .side-post-only #region-main-box {
     width: 100% !important;
     float: none !important;

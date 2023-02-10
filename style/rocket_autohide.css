@@ -6,7 +6,9 @@
 #dndupload-status {
 	display: none;
 }
-
+.columnleft.blockcolumn.has-blocks {
+    width: 30% !important;
+}
 .block .header .commands a img,
 .path-course-view .section .content li .commands a img,
 .path-course-view .section .content .summary a img.icon.edit{

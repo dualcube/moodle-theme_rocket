@@ -34,6 +34,8 @@ ul.dropdown span.customitem {
 ul.dropdown li a,
 ul.dropdown span.customitem a {
     padding:0.625rem 1.25rem;
+    font-size: 0.75rem;
+    background-color: transparent !important;
 }
 ul.dropdown span.customitem a:hover {
     border: 0;
@@ -190,4 +192,8 @@ ul.dropdown ul ul *.open,
 ul.dropdown ul ul li:hover > span,
 ul.dropdown ul ul li:hover > span a {
     color:#fff;
+}
+div#usernavigation {
+    background: #fff;
+    padding: 0.25rem 0;
 }

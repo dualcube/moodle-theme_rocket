@@ -41,8 +41,16 @@ table {
     font-size: 90%;
     font-family: Helvetica,Arial,sans-serif;
 }
+.pagelayout-mycourses #page{
+    margin-top: 3.125rem;
+}
+header#page-header .col-12.pt-3.pb-3 {
+    padding-left: 0;
+    padding-right: 0;
+}
 #page-content {
     padding-bottom: 0.625rem;
+    display: block;
 }
 
 /* @end */
@@ -256,11 +264,14 @@ color : #fff !important ;
 color : #fff;
 line-height : 2.188rem;
 }
+.pagelayout-mycourses .breadcrumb li a, .pagelayout-mycourses .breadcrumb li {
+    color : #000 !important;
+}
 
 .breadcrumb li a, .breadcrumb li, .breadcrumb li a:visited {
 font-weight : 200;
 text-decoration : none;
-color : #fff;
+color: #fff;
 }
 .breadcrumb li a:hover {
 text-decoration:none;
@@ -892,4 +903,17 @@ table#links a {
 }
 .coursebox > .info > .coursename a {
     height: 1.25rem;
+}
+
+@media (max-width: 767.98px){
+#page-header .card {
+    border: 0;
+    padding: 1rem;
+}
+.pagelayout-mycourses{
+    width: max-content;
+}
+.navbar-expand .navbar-nav {
+    display: flex!important;
+}
 }
