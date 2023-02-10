@@ -178,7 +178,7 @@ class theme_rocket_core_renderer extends core_renderer {
     /**
      * Reformat edit button to new status indicator
      */
-    public function edit_button(moodle_url $url) {
+    public function edit_button(moodle_url $url, string $method = 'post') {
         $edittoggle = 'enable';
         if (!empty($this->page->theme->settings->edittoggle)) {
             $edittoggle = $this->page->theme->settings->edittoggle;

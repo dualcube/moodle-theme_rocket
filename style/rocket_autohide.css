@@ -6,7 +6,9 @@
 #dndupload-status {
 	display: none;
 }
-
+.columnleft.blockcolumn.has-blocks {
+    width: 30% !important;
+}
 .block .header .commands a img,
 .path-course-view .section .content li .commands a img,
 .path-course-view .section .content .summary a img.icon.edit{
@@ -54,11 +56,11 @@
 }
 
 .path-course-view .section .content li {
-	padding: 3px;
+	padding: 0.188rem;
 }
 
 .editing .section .content li:hover {
-	border: 1px dashed #ff6666;
+	border: 0.063rem dashed #ff6666;
 }
 
 /** some feedback to tell user we are in editing mode **/
